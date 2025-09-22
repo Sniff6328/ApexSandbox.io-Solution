@@ -1,6 +1,10 @@
 public String evenOrOdd(Integer num) {
     //code here
-    If((Math.mod(num,2)==0){
+    Integer numafterdivide=Math.mod(num,2);
+    
+    if(num==0){
+        return 'even';
+    }else if(numafterdivide==0){
         return 'even';
     }else{
         return 'odd';
