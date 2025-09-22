@@ -1,0 +1,15 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    //code here
+    Map<String, String> winningSenario=new Map<String,String>();
+    winningSenario.put('rock','scissors');
+    winningSenario.put('paper','scissors');
+    winningSenario.put('paper','rock');
+
+    if(player1==player2){
+        return 0;
+    }else if(winningSenario.get(player1)==player2){
+        return 1;
+    }else{
+        return 2;
+    }
+}
