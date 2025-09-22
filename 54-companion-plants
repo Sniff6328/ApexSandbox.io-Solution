@@ -5,6 +5,10 @@ public Boolean companionPlants(String plant1, String plant2) {
     companionPlants.put('lettuce','onions');
     companionPlants.put('onions','carrots');
     companionPlants.put('onions','tomatoes');
+    companionPlants.put('cucumbers','lettuce');
+    companionPlants.put('onions','lettuce');
+    companionPlants.put('carrots','onions');
+    companionPlants.put('tomatoes','onions');
 
     if(companionPlants.get(plant1)==plant2){
         return true;
