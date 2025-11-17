@@ -1,18 +1,22 @@
 public Boolean isLeapYear(Integer year) {
     //code here
+
+    String ttrue='+year+' should be a leap year';
+    String ffalse='+year+' should not be a leap year';
+
     if(Math.mod(year,4)==0){
         if(Math.mod(year,100)==0){
             if(Math.mod(year,400)==0){
-                return true
+                return ttrue
             }
             else(){
-                return false;
+                return ffalse;
             }
         }
         else(){
-            return true;
+            return ttrue;
         }
     }else(){
-        return false;
+        return ffalse;
     }
 }
